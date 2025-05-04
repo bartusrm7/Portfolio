@@ -1,0 +1,50 @@
+@use "../../global" as *;
+@use "../../mixins" as *;
+
+.about-me {
+	position: relative;
+	&__small-section-label {
+		position: relative;
+		color: $text-color;
+		transition: 0.3s;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin: 0 auto;
+			width: 100%;
+			height: 3px;
+			background-color: $secondary-color;
+			transform: translateX(-50%);
+		}
+	}
+	.break-between-sections {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: auto;
+		padding: 0;
+		width: 3px;
+		height: 50%;
+		background-color: $text-color;
+		transform: translate(-50%, -50%);
+		opacity: 0.05;
+	}
+	&__background-detail1 {
+		position: absolute;
+		top: 10%;
+		right: 10%;
+		height: 300px;
+		opacity: 0.01;
+		transform: rotate(100deg);
+	}
+	&__background-detail2 {
+		position: absolute;
+		bottom: 5%;
+		left: 10%;
+		height: 300px;
+		opacity: 0.01;
+		transform: rotate(20deg);
+	}
+}

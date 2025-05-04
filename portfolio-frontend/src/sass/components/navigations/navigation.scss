@@ -1,0 +1,64 @@
+@use "../../global" as *;
+@use "../../mixins" as *;
+
+.navigation {
+	position: relative;
+	.hamburger-react {
+		color: $secondary-color;
+	}
+	.hamburger-react:hover {
+		color: $hover-text-color;
+	}
+	&__menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 10;
+	}
+	&__nav-menu {
+		position: fixed;
+		top: 0;
+		right: 50%;
+		background-color: rgba(0, 0, 0, 1);
+		transform: translateX(50%);
+		z-index: -1;
+		transition: 0.3s;
+	}
+	&__nav-item {
+		position: relative;
+		color: $text-color;
+		transform: translateX(1000%);
+		transition: 0.3s;
+		opacity: 0;
+		&:hover {
+			color: $hover-text-color;
+		}
+		&:focus {
+			color: inherit;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			margin: 0 auto;
+			width: 20px;
+			height: 3px;
+			background-color: $secondary-color;
+			transform: translateX(-50%);
+		}
+	}
+	.opened-menu {
+		z-index: 9;
+	}
+	.opened-menu &__nav-item {
+		transform: translateX(0);
+		opacity: 1;
+		&:hover {
+			transform: scale(1.2);
+		}
+		&:hover::after {
+			background-color: $hover-text-color;
+		}
+	}
+}

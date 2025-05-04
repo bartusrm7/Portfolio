@@ -1,0 +1,17 @@
+@use "../../global" as *;
+@use "../../mixins" as *;
+
+.main-page {
+	&__main-description {
+		h1 {
+			background: linear-gradient(90deg, rgb(105, 105, 105), rgb(68, 68, 68));
+			color: $secondary-color;
+		}
+		p {
+			text-shadow: 1px 1px 20px white;
+		}
+	}
+	&__check-resume-btn {
+		margin-top: 5em;
+	}
+}
