@@ -17,8 +17,8 @@ export default function Navigation() {
 					isOpenMenu ? "opened-menu" : ""
 				}`}>
 				{navLinks.map(navLink => (
-					<NavItem>
-						<NavLink className='navigation__nav-item fs-3' href={navLink.href}>
+					<NavItem key={navLink.label}>
+						<NavLink className='navigation__nav-item fs-3' href={navLink.href} onClick={() => setIsOpenMenu(false)}>
 							{navLink.label}
 						</NavLink>
 					</NavItem>
