@@ -5,9 +5,9 @@
 	position: relative;
 	.hamburger-react {
 		color: $secondary-color;
-	}
-	.hamburger-react:hover {
-		color: $hover-text-color;
+		&:hover {
+			color: $hover-text-color;
+		}
 	}
 	&__menu {
 		position: fixed;

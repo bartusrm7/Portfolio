@@ -7,7 +7,7 @@ export default function AboutMe() {
 		<div className='about-me'>
 			<h1 className='section-label mt-5'>About Me</h1>
 			<Container
-				className='col-lg-8 min-vh-100 d-flex flex-column justify-content-center align-items-center'
+				className='col-sm-10 col-lg-8 col-xxl-6 min-vh-100 d-flex flex-column justify-content-center align-items-center'
 				id='about-me'>
 				<Row className='mt-5 mt-md-0 pt-5 d-flex flex-column flex-md-row'>
 					<div>

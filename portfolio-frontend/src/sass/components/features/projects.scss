@@ -3,4 +3,60 @@
 
 .projects {
 	position: relative;
+	&__project-description-container {
+		h4 {
+			position: relative;
+			color: $text-color;
+			display: inline-flex;
+			transition: 0.3s;
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin: 0 auto;
+				width: 100%;
+				height: 3px;
+				background-color: $secondary-color;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&__technologies-used {
+		color: $secondary-color;
+	}
+	&__project-img {
+		width: 220px;
+		height: 120px;
+		background-position: center;
+		background-size: cover;
+		object-fit: cover;
+		border: 10px solid $dark-grey-color;
+		@include min-width(768px) {
+			width: 300px;
+			height: 150px;
+		}
+	}
+	&__links-btn {
+		background-color: $secondary-color;
+		color: $dark-grey-color;
+		transition: 0.3s;
+		border: inherit;
+		&:hover {
+			background-color: $hover-text-color !important;
+			color: $text-color !important;
+		}
+	}
+	.runboost {
+		background-image: url("/project-photos/RunBoostPhoto.png");
+	}
+	.worktracker {
+		background-image: url("/project-photos/WorkTrackerPhoto.png");
+	}
+	.carservice {
+		background-image: url("/project-photos/CarServicePhoto.png");
+	}
+	.fitguardian {
+		background-image: url("/project-photos/FitGuardianPhoto.png");
+	}
 }
