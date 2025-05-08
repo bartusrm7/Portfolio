@@ -2,12 +2,12 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 
 export default function Projects() {
 	return (
-		<div className='projects'>
+		<div className='projects scroll-animate-view'>
 			<h1 className='section-label mt-3 mt-md-5'>Projects</h1>
 			<Container
 				className='col-sm-10 col-lg-8 col-xxl-6 min-vh-100 pt-5 d-flex flex-column justify-content-between align-items-center'
 				id='projects'>
-				<Row className='w-100 mt-5 pt-5'>
+				<Row className='scroll-animate-view w-100 mt-5 pt-5'>
 					<Col className='mb-5'>
 						<div className='projects__project-item text-center text-md-start d-md-flex justify-content-between'>
 							<div className='projects__project-description-container'>
@@ -40,7 +40,7 @@ export default function Projects() {
 						</div>
 					</Col>
 				</Row>
-				<Row className='w-100'>
+				<Row className='scroll-animate-vieww-100'>
 					<Col className='mb-5'>
 						<div className='projects__project-item text-center text-md-end d-md-flex flex-row-reverse justify-content-between'>
 							<div className='projects__project-description-container'>
@@ -71,7 +71,7 @@ export default function Projects() {
 						</div>
 					</Col>
 				</Row>
-				<Row className='w-100'>
+				<Row className='scroll-animate-view w-100'>
 					<Col className='mb-5'>
 						<div className='projects__project-item text-center text-md-start d-md-flex justify-content-between'>
 							<div className='projects__project-description-container'>
@@ -104,7 +104,7 @@ export default function Projects() {
 						</div>
 					</Col>
 				</Row>
-				<Row className='w-100 mb-5 pb-5'>
+				<Row className='scroll-animate-view w-100 mb-5 pb-5'>
 					<Col>
 						<div className='projects__project-item text-center text-md-end d-md-flex flex-row-reverse justify-content-between'>
 							<div className='projects__project-description-container'>

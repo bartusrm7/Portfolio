@@ -29,3 +29,20 @@ body {
 	color: $secondary-color;
 	transform: translateX(50%);
 }
+
+@keyframes scroll-animate {
+	from {
+		opacity: 0;
+		clip-path: inset(0 0 100% 0);
+	}
+	35% {
+		opacity: 1;
+		clip-path: inset(0 0 0 0);
+	}
+}
+
+.scroll-animate-view {
+	animation: scroll-animate linear;
+	animation-timeline: view();
+	animation-range: entry 0% cover 60%;
+}

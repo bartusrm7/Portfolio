@@ -11,13 +11,13 @@ import {
 
 export default function Technologies() {
 	return (
-		<div className='technologies'>
+		<div className='technologies scroll-animate-view'>
 			<h1 className='section-label mt-5'>Technologies</h1>
 			<Container
 				className='col-sm-10 col-lg-8 col-xxl-6 min-vh-100 d-flex flex-column justify-content-center align-items-center'
 				id='technologies'>
 				<Row className='mt-5 mt-md-0 pt-5 pt-md-0 w-100 d-block d-md-flex'>
-					<Col className='me-md-3'>
+					<Col className='scroll-animate-view me-md-3'>
 						<h3 className='mb-3'>Frontend</h3>
 						<div>
 							<ul className='technologies__items-list'>
@@ -42,7 +42,7 @@ export default function Technologies() {
 							</ul>
 						</div>
 					</Col>
-					<Col>
+					<Col className="scroll-animate-view ">
 						<h3 className='mb-3'>Backend</h3>
 						<div>
 							<ul className='technologies__items-list'>
@@ -69,7 +69,7 @@ export default function Technologies() {
 					</Col>
 				</Row>
 				<Row className='w-100 d-block d-md-flex'>
-					<Col className='me-md-3'>
+					<Col className='scroll-animate-view me-md-3'>
 						<h3 className='mb-3'>Other</h3>
 						<div>
 							<ul className='technologies__items-list'>
@@ -94,7 +94,7 @@ export default function Technologies() {
 							</ul>
 						</div>
 					</Col>
-					<Col>
+					<Col className="scroll-animate-view">
 						<h3 className='mb-3'>Languages</h3>
 						<div>
 							<ul className='technologies__items-list'>

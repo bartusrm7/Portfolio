@@ -4,7 +4,7 @@ import { faSquare } from "@fortawesome/free-regular-svg-icons";
 
 export default function AboutMe() {
 	return (
-		<div className='about-me'>
+		<div className='about-me scroll-animate-view'>
 			<h1 className='section-label mt-5'>About Me</h1>
 			<Container
 				className='col-sm-10 col-lg-8 col-xxl-6 min-vh-100 d-flex flex-column justify-content-center align-items-center'

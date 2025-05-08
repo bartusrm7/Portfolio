@@ -6,16 +6,16 @@ import EmailContact from "./EmailContact";
 
 export default function Contact() {
 	return (
-		<div className='contact'>
+		<div className='contact scroll-animate-view'>
 			<div className='contact__background-img'></div>
 			<h1 className='section-label mt-5'>Contact</h1>
 			<Container id='contact'>
 				<Row className='pt-5 pb-xl-3 d-flex flex-column flex-lg-row justify-content-center align-items-center align-items-lg-start'>
-					<Col className='col-md-10 col-lg-8 col-xl-6 pt-5 pb-5 mt-5'>
+					<Col className='scroll-animate-view col-md-10 col-lg-8 col-xl-6 pt-5 pb-5 mt-5'>
 						<h3 className='mb-3'>Send a message</h3>
 						<EmailContact />
 					</Col>
-					<Col className='col-md-10 col-lg-8 col-xl-6 pt-xl-5 pb-5 mt-xl-5'>
+					<Col className='scroll-animate-view col-md-10 col-lg-8 col-xl-6 pt-xl-5 pb-5 mt-xl-5'>
 						<h3 className='mb-3'>Get in touch</h3>
 
 						<div>
