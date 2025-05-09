@@ -57,7 +57,10 @@ export default function Projects() {
 							<div className='projects__project-img-container me-md-3'>
 								<div className='projects__project-img worktracker m-auto'></div>
 								<div className='d-flex mt-3'>
-									<a href='' target='blank' className='projects__links-to-move me-3 w-100'>
+									<a
+										href='https://worktracker-m311.onrender.com/'
+										target='blank'
+										className='projects__links-to-move me-3 w-100'>
 										<Button className='projects__links-btn rounded-0 w-100'>Preview</Button>
 									</a>
 									<a
